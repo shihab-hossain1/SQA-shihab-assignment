@@ -1,0 +1,30 @@
+{
+  "name": "Reqres",
+  "values": [
+    {
+      "key": "baseUrl",
+      "value": "https://reqres.in/api",
+      "enabled": true
+    },
+    {
+      "key": "apiKey",
+      "value": "free_user_3KmvipU5fJTb8KE2t5uu84vhai2",
+      "enabled": true
+    },
+    {
+      "key": "userId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "authToken",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "userEmail",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "saucedemo-reqres-assignment",
+  "version": "1.0.0",
+  "description": "Automation testing assignment - saucedemo UI and reqres API",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:q1": "npx playwright test tests/q1.spec.js",
+    "test:q2": "npx playwright test tests/q2.spec.js",
+    "test:q3": "npx playwright test tests/q3.spec.js",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "allure": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
+    "api": "npx newman run postman/reqres-collection.json -e postman/reqres-environment.json -r cli,htmlextra --reporter-htmlextra-export newman/api-report.html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.0",
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
